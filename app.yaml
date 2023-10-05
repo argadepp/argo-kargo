@@ -41,8 +41,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ${GITOPS_REPO_URL}
-    targetRevision: stage/test
+    repoURL: https://github.com/argadepp/argo-kargo.git
+    targetRevision: test
     path: stages/test
   destination:
     server: https://kubernetes.default.svc
@@ -58,8 +58,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ${GITOPS_REPO_URL}
-    targetRevision: stage/uat
+    repoURL: https://github.com/argadepp/argo-kargo.git
+    targetRevision: uat
     path: stages/uat
   destination:
     server: https://kubernetes.default.svc
@@ -75,8 +75,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ${GITOPS_REPO_URL}
-    targetRevision: stage/prod
+    repoURL: https://github.com/argadepp/argo-kargo.git
+    targetRevision: prod
     path: stages/prod
   destination:
     server: https://kubernetes.default.svc

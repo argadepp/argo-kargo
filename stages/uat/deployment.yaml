@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uat-app-app
+spec:
+  selector:
+    matchLabels:
+      app: uat-app-app
+  replicas: 1  
+  template:
+    metadata:
+      labels:
+        app: uat-app-app
+    spec:
+      containers:
+      - name: uat-app-app
+        image: 9673483686/helloworld
+        ports:
+        - containerPort: 80
