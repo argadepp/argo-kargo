@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: uat-app-app
+  replicas: 1  
   template:
     metadata:
       labels:
