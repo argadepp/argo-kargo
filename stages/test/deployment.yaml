@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: test-app
-        image: 9673483686/helloworld
+        image: 9673483686/helloworld:v0.1.0
         ports:
         - containerPort: 80
