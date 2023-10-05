@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 9673483686/helloworld:v0.1.0
+        image: nginx:1.16.1
         ports:
         - containerPort: 80
