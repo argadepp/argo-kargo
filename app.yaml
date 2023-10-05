@@ -27,9 +27,9 @@ metadata:
 stringData:
   type: git
   project: default
-  url: ${GITOPS_REPO_URL}
-  username: ${GITHUB_USERNAME}
-  password: ${GITHUB_PAT}
+  url: https://github.com/argadepp/argo-kargo.git
+  username: argadepp@gmail.com
+  password: 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
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -42,7 +42,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/argadepp/argo-kargo.git
-    targetRevision: test
+    targetRevision: prod
     path: stages/test
   destination:
     server: https://kubernetes.default.svc
@@ -59,7 +59,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/argadepp/argo-kargo.git
-    targetRevision: uat
+    targetRevision: prod
     path: stages/uat
   destination:
     server: https://kubernetes.default.svc
